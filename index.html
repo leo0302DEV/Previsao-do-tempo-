@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Previsão do tempo</title>
+    </head>
+    <body>
+
+        <h1 class="page__title">Previsão global do tempo com JavaScript</h1>
+
+        <article class="page__window">
+            <section class="window__section">
+                <input type="text" name="text" id="window__seachbar" placeholder="Digite sua localização. EX: Vacaria,BR">
+                <button type="submit" class="window__seachbutton">
+                    <img src="./assets/lupa-arredondada.png" alt="Ícone de lupa arredondada" class="seachbutton__img">
+                </button>
+            </section>
+            <span class="window__localizacao">&#128204; 
+                <strong class="localizacao__local">Cidade,Pais</strong>
+            </span>
+            <section class="window__temperature">
+                <span class="temperature__icon">
+                    <img src="./assets/ensolarado.png" alt="Ícone de tempo ensolarado" class="hidden icone__principal">
+                    <img src="./assets/parcialmente-nublado.png" alt="Ícone de tempo parcialmente nublado" class="hidden icone__principal">
+                    <img src="./assets/dia-nublado.png" alt="Ícone de tempo nublado" class="hidden icone__principal">
+                    <img src="./assets/chovendo.png" alt="Ícone de tempo chuvoso" class="hidden icone__principal">
+                    <img src="./assets/trovoada.png" alt="Ícone de tempestade" class="hidden icone__principal">
+                    <img src="./assets/queda-de-neve.png" alt="Ícone de nevasca" class="hidden icone__principal">
+                    <img src="./assets/nevoa.png" alt="Ícone de nevoa" class="hidden icone__principal">
+                    <img src="./assets/lua-crescente.png" alt="Ícone de lua" class="hidden icone__principal">
+                    <img src="./assets/noite-nublada.png" alt="Ícone de lua com nuvens" class="hidden icone__principal">
+                    <p class="temperature__text">
+                        <strong class="text__numero">20</strong>&deg;
+                        <strong class="text__unidadeMedida">C</strong>
+                    </p>
+                </span>
+                <p class="window__descricaoIcone">Parcialmente nublado</p>
+            </section>
+            <section class="window__minmax">
+                <div class="minmax__box">
+                    <img src="./assets/troca.png" alt="Seta para cima e para baixo" class="box__icone">
+                    <p class="box__temperatura">
+                        <strong class="temperatura__numero numero-max">15</strong>
+                        &deg;
+                        <strong class="temperatura__unidadeMedida">C</strong>
+                        <strong class="temperatura__indicacao">max</strong>
+                    </p>
+                </div>
+                <div class="minmax__box">
+                    <img src="./assets/troca.png" alt="Seta para cima e para baixo" class="box__icone">
+                    <p class="box__temperatura">
+                        <strong class="temperatura__numero numero-min">20</strong>
+                        &deg;
+                        <strong class="temperatura__unidadeMedida">C</strong>
+                        <strong class="temperatura__indicacao">min</strong>
+                    </p>
+                </div>
+            </section>
+            <ul class="window__infoAdicionais">
+                <li class="infoAdicionais__linha">
+                    <img src="./assets/graus-do-termometro-de-mercurio.png" class="info__icone" alt="Ícone de termometro de mercúrio">
+                    <p class="sensacaoTermica__texto">
+                        Sensação termica: 
+                        <strong class="texto-numero numero-sensacao">18</strong>
+                        &deg;
+                        C
+                    </p>
+                </li>
+                <li class="infoAdicionais__linha">
+                    <img src="./assets/vento.png" class="info__icone" alt="Ícone de vento">
+                    <p class="vento__texto">
+                        Vento: 
+                        <strong class="texto-numero numero-vento">5</strong>
+                        Km/h
+                    </p>
+                </li>
+                <li class="infoAdicionais__linha">
+                    <img src="./assets/gotas-de-agua.png" class="info__icone" alt="Ícone de gota de chuva">
+                    <p class="probPrecipi__texto">Umidade: <strong class="texto-numero numero-prob">80</strong>g/m3</p>
+                </li>
+                <li class="infoAdicionais__linha">
+                    <img src="./assets/medidor-de-pressao.png" class="info__icone" alt="Ícone de gota">
+                    <p class="volPrecipi__texto">Pressão: <strong class="texto-numero numero-vol">1015</strong>hPa</p>
+                </li>
+            </ul>
+            <p class="copyright">&copy; Leonardo Kramer Nadal</p>
+        </article>
+    </body>
+    <script src="./js/main.js"></script>
+</html>

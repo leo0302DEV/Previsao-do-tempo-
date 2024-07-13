@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #FFFFFF;
+    --sheadow: 0 5px 5px rgba(39, 35, 35, 0.5) ;
+    --sheadow2: 5px 5px 5px rgba(39, 35, 35, 0.5);
+    --fonte-principal: 'MuseoModerno', cursive;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    background-color: aqua;
+}
+
+.page__title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome__window {
+    text-align: center;
+} 
+
+.page__window, .welcome__window {
+    background-color: var(--cor-principal);
+    box-shadow: var(--sheadow2);
+    padding: 20px;
+    width: 40%;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.window__section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+    gap: 10px;
+}
+
+#window__seachbar {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 80%;
+}
+
+#window__seachbar::placeholder {
+    font-family: var(--fonte-principal);
+}
+
+.window__seachbutton, .second-seach-button {
+    border-radius: 10px;
+    padding: 10px 17px;
+    border: none;
+    background-color: rgb(67, 116, 252);
+    cursor: pointer;
+}
+
+.window__seachbutton:hover {
+    background-color: #FFFFFF;
+    transition: 500ms;
+}
+
+.seachbutton__img {
+    width: 15px;
+}
+
+.window__localizacao {
+    opacity: .6;
+}
+
+.localizacao__local {
+    font-weight: 400;
+}
+
+.window__temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature__icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text__numero {
+    font-size: 100px;
+}
+
+.icone__principal {
+    width: 150px;
+}
+
+.window__minmax {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 30px 0;
+}
+
+.minmax__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: var(--sheadow);
+    padding: 15px;
+    width: 50%;
+}
+
+.box__icone {
+    width: 40px;
+}
+
+.temperatura__numero {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.temperatura__indicacao {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.window__infoAdicionais {
+    list-style-type: none;
+}
+
+.infoAdicionais__linha {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 20px 0;
+}
+
+.info__icone {
+    width: 25px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
